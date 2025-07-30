@@ -1,6 +1,7 @@
-package com.ridelog.app.domain.model;
+package com.ridelog.app.dao.model;
 
 
+import java.util.List;
 
 public class Attraction {
     private int id;
@@ -8,5 +9,7 @@ public class Attraction {
     private String description;
     private String imagenUrl;
     private AttractionType type;
+    private List<Review> reviews;
+
 
 }

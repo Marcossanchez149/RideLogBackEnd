@@ -1,4 +1,4 @@
-package com.ridelog.app.domain.model.user;
+package com.ridelog.app.dao.model.user;
 
 import java.util.List;
 
