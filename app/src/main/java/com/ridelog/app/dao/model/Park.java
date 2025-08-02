@@ -40,4 +40,35 @@ public class Park {
     private List<ImagePark> imagenes = new ArrayList<>();
 
 
+    // Constructors
+    public Park() {}
+
+    public Park(String name, String location, String description) {
+        this.name = name;
+        this.location = location;
+        this.description = description;
+    }
+
+    // Getters and Setters
+    public Long getId() { return id; }
+    public void setId(Long id) { this.id = id; }
+
+    public String getName() { return name; }
+    public void setName(String name) { this.name = name; }
+
+    public String getLocation() { return location; }
+    public void setLocation(String location) { this.location = location; }
+
+    public String getDescription() { return description; }
+    public void setDescription(String description) { this.description = description; }
+
+    public List<Attraction> getAtracciones() { return atracciones; }
+    public void setAtracciones(List<Attraction> atracciones) { this.atracciones = atracciones; }
+
+    public List<ImagePark> getImagenes() { return imagenes; }
+    public void setImagenes(List<ImagePark> imagenes) { this.imagenes = imagenes; }
+
+
+
+
 }
