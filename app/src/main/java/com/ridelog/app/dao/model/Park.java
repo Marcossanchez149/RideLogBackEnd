@@ -49,6 +49,13 @@ public class Park {
         this.description = description;
     }
 
+    public Park(Long id, String name, String location, String description) {
+        this.id = id;
+        this.name = name;
+        this.location = location;
+        this.description = description;
+    }
+
     // Getters and Setters
     public Long getId() { return id; }
     public void setId(Long id) { this.id = id; }

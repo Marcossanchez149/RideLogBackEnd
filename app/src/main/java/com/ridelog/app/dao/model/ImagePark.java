@@ -22,4 +22,44 @@ public class ImagePark {
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "parque_id", nullable = false)
     private Park park;
+
+    public ImagePark() {
+    }
+    public ImagePark(String url, String altText, Park park) {
+        this.url = url;
+        this.altText = altText;
+        this.park = park;
+    }
+
+    public Long getId() {
+        return id;
+    }
+
+    public void setId(Long id) {
+        this.id = id;
+    }
+
+    public String getUrl() {
+        return url;
+    }
+
+    public void setUrl(String url) {
+        this.url = url;
+    }
+
+    public String getAltText() {
+        return altText;
+    }
+
+    public void setAltText(String altText) {
+        this.altText = altText;
+    }
+
+    public Park getPark() {
+        return park;
+    }
+
+    public void setPark(Park park) {
+        this.park = park;
+    }
 }
